@@ -2,11 +2,28 @@
 // Number (número)
 // Bollean (True | Flase)
 
+window.addEventListener('scroll', onScroll)
+
+onScroll()
 function onScroll() {
+  showNavOnScroll()
+  showBackToTopButtonOnScroll()
+}
+
+function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
   } else {
     navigation.classList.remove('scroll')
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  console.log(scrollY)
+  if (scrollY > 550) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
   }
 }
 
@@ -31,4 +48,9 @@ ScrollReveal({
   #services .card,
   #about, 
   #about header, 
-  #about .content`)
+  #about .content,
+  #about img,
+  #contact header,
+  #contact ul,
+  #contact a,
+  #contact img`)
