@@ -496,7 +496,6 @@ footer .social-links {
 
   .col-b {
     grid-area: B;
-
   }
 
   section {
@@ -698,7 +697,7 @@ footer .social-links {
 
 #services .cards {
   flex-direction: row;
-  flex-wrap : wrap;
+  flex-wrap: wrap;
   gap: 4rem;
 }
 
@@ -743,7 +742,7 @@ footer .wrapper {
 }
 
 footer .col-a {
-  Align-self: center;
+  align-self: center;
 }
 
 footer .col-b {
